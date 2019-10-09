@@ -1,0 +1,7 @@
+CREATE TABLE orders (
+  id PRIMARY KEY AUTOINCREMENT
+
+  CONSTRAINT fk_subscriptions
+    FOREING KEY (subscription_id)
+    REFERENCES subscriptions(subscription_id)
+);
